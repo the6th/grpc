@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D8155C26-663F-3580-A4FC-60A771240C51}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf;C:\GitHub\grpc-the6th\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf;C:\GitHub\grpc-the6th\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf;C:\GitHub\grpc-the6th\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf;C:\GitHub\grpc-the6th\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GitHub\grpc-the6th\third_party\protobuf\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitHub\grpc-the6th\third_party\protobuf\cmake\extract_includes.bat.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\install.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotobuf-lite.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotobuf.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotoc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-config-version.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-config.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-lite.pc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-module.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-options.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf.pc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protoc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\version.rc.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitHub\grpc-the6th\third_party\protobuf\cmake\extract_includes.bat.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\install.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotobuf-lite.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotobuf.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotoc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-config-version.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-config.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-lite.pc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-module.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-options.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf.pc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protoc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\version.rc.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitHub\grpc-the6th\third_party\protobuf\cmake\extract_includes.bat.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\install.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotobuf-lite.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotobuf.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotoc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-config-version.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-config.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-lite.pc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-module.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-options.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf.pc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protoc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\version.rc.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitHub\grpc-the6th\third_party\protobuf\cmake\extract_includes.bat.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\install.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotobuf-lite.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotobuf.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\libprotoc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-config-version.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-config.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-lite.pc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-module.cmake.in;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf-options.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protobuf.pc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\protoc.cmake;C:\GitHub\grpc-the6th\third_party\protobuf\cmake\version.rc.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\ZERO_CHECK.vcxproj">
+      <Project>{0E0E67ED-E715-3413-90C1-95E5C4A16424}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf\libprotobuf.vcxproj">
+      <Project>{AFD82593-0127-3EE4-92F3-C6D8FA8BCF0E}</Project>
+      <Name>libprotobuf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf\libprotobuf-lite.vcxproj">
+      <Project>{83EA61E5-860A-359E-B05B-C3217F3F54EF}</Project>
+      <Name>libprotobuf-lite</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf\libprotoc.vcxproj">
+      <Project>{E11A8AE8-6172-3B5F-BBC6-0209B25AD7E8}</Project>
+      <Name>libprotoc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\protobuf\protoc.vcxproj">
+      <Project>{762D311C-6307-33D9-9BEE-49671B045D1E}</Project>
+      <Name>protoc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|ARM">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|ARM">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8EA9915D-507D-337A-9EDE-FBCB0B7F2EF9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>adig</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">adig.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">adig</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">adig</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">adig.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">adig</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">adig</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">adig.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">adig</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">adig</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">adig.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">adig</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">adig</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cares.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/lib/Debug/adig.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/bin/Debug/adig.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cares.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/lib/Debug/adig.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/bin/Debug/adig.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\Release\cares.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/lib/Release/adig.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/bin/Release/adig.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\Release\cares.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/lib/Release/adig.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/bin/Release/adig.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cares.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/lib/MinSizeRel/adig.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/bin/MinSizeRel/adig.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cares.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/lib/MinSizeRel/adig.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/bin/MinSizeRel/adig.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cares.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/lib/RelWithDebInfo/adig.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/bin/RelWithDebInfo/adig.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT=0x0600;CARES_STATICLIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares;C:\GitHub\grpc-the6th\third_party\cares\cares;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cares.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/lib/RelWithDebInfo/adig.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/bin/RelWithDebInfo/adig.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GitHub\grpc-the6th\third_party\cares\cares\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/cares/cares/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/cares/cares/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_INET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_COMPAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_DLFCN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_LIMITS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MEMORY_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETDB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_IN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NET_IF_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SIGNAL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDLIB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRINGS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRING_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SELECT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\Makefile.inc.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_build.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_config.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\c-ares-config.cmake.in;C:\GitHub\grpc-the6th\third_party\cares\cares\libcares.pc.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_INET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_COMPAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_DLFCN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_LIMITS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MEMORY_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETDB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_IN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NET_IF_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SIGNAL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDLIB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRINGS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRING_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SELECT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\Makefile.inc.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_build.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_config.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\c-ares-config.cmake.in;C:\GitHub\grpc-the6th\third_party\cares\cares\libcares.pc.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/cares/cares/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/cares/cares/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_INET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_COMPAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_DLFCN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_LIMITS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MEMORY_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETDB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_IN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NET_IF_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SIGNAL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDLIB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRINGS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRING_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SELECT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\Makefile.inc.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_build.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_config.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\c-ares-config.cmake.in;C:\GitHub\grpc-the6th\third_party\cares\cares\libcares.pc.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_INET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_COMPAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_DLFCN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_LIMITS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MEMORY_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETDB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_IN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NET_IF_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SIGNAL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDLIB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRINGS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRING_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SELECT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\Makefile.inc.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_build.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_config.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\c-ares-config.cmake.in;C:\GitHub\grpc-the6th\third_party\cares\cares\libcares.pc.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/cares/cares/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/cares/cares/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_INET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_COMPAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_DLFCN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_LIMITS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MEMORY_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETDB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_IN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NET_IF_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SIGNAL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDLIB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRINGS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRING_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SELECT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\Makefile.inc.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_build.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_config.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\c-ares-config.cmake.in;C:\GitHub\grpc-the6th\third_party\cares\cares\libcares.pc.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_INET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_COMPAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_DLFCN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_LIMITS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MEMORY_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETDB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_IN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NET_IF_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SIGNAL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDLIB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRINGS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRING_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SELECT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\Makefile.inc.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_build.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_config.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\c-ares-config.cmake.in;C:\GitHub\grpc-the6th\third_party\cares\cares\libcares.pc.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/cares/cares/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/cares/cares/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/cares/cares/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_INET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_COMPAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_DLFCN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_LIMITS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MEMORY_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETDB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_IN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NET_IF_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SIGNAL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDLIB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRINGS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRING_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SELECT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\Makefile.inc.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_build.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_config.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\c-ares-config.cmake.in;C:\GitHub\grpc-the6th\third_party\cares\cares\libcares.pc.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_INET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_COMPAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_NAMESER_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_DLFCN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_LIMITS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MALLOC_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_MEMORY_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETDB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_IN_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_NET_IF_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SIGNAL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STDLIB_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRINGS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STRING_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SELECT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_SOCKET_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_STAT_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_TIME_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\Makefile.inc.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_build.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\ares_config.h.cmake;C:\GitHub\grpc-the6th\third_party\cares\cares\c-ares-config.cmake.in;C:\GitHub\grpc-the6th\third_party\cares\cares\libcares.pc.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\GitHub\grpc-the6th\third_party\cares\cares\adig.c" />
+    <ClCompile Include="C:\GitHub\grpc-the6th\third_party\cares\cares\ares_getopt.c" />
+    <ClCompile Include="C:\GitHub\grpc-the6th\third_party\cares\cares\ares_nowarn.c" />
+    <ClCompile Include="C:\GitHub\grpc-the6th\third_party\cares\cares\ares_strcasecmp.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\ZERO_CHECK.vcxproj">
+      <Project>{0E0E67ED-E715-3413-90C1-95E5C4A16424}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\cares\cares\c-ares.vcxproj">
+      <Project>{410D0649-4EEA-3D8D-8834-5F68D6BEE347}</Project>
+      <Name>c-ares</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

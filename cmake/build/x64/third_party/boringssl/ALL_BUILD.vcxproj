@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D8155C26-663F-3580-A4FC-60A771240C51}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GitHub\grpc-the6th\third_party\boringssl\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitHub\grpc-the6th\third_party\boringssl\sources.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPerl.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitHub\grpc-the6th\third_party\boringssl\sources.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPerl.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitHub\grpc-the6th\third_party\boringssl\sources.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPerl.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitHub\grpc-the6th\third_party\boringssl\sources.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPerl.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\ZERO_CHECK.vcxproj">
+      <Project>{0E0E67ED-E715-3413-90C1-95E5C4A16424}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\asn1.vcxproj">
+      <Project>{9D55677C-B27A-3058-901E-6DA836821EDF}</Project>
+      <Name>asn1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\base64\base64.vcxproj">
+      <Project>{2C3501B8-B740-3B8F-816D-30A5A98A515C}</Project>
+      <Name>base64</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\bio.vcxproj">
+      <Project>{28FFF4E7-F7E7-3E58-8683-F23039F96084}</Project>
+      <Name>bio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\bio\bio_decrepit.vcxproj">
+      <Project>{DA6BB4FF-01AE-3CAA-B369-F7BC82DB39BB}</Project>
+      <Name>bio_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\blowfish\blowfish.vcxproj">
+      <Project>{D1D950C6-6E7D-37BE-A7BB-DDFA2701FA9D}</Project>
+      <Name>blowfish</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bn_extra\bn_extra.vcxproj">
+      <Project>{7585D7FB-D1A0-39CB-A29E-483C5AB80C33}</Project>
+      <Name>bn_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\boringssl_gtest.vcxproj">
+      <Project>{2B0A73EE-1CE9-3A5C-8155-D15940362ADA}</Project>
+      <Name>boringssl_gtest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\test\boringssl_gtest_main.vcxproj">
+      <Project>{0510E8FD-25FA-3C25-BA87-726E1A58AD34}</Project>
+      <Name>boringssl_gtest_main</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\tool\bssl.vcxproj">
+      <Project>{27B4ABCF-DA20-349E-B4A8-66A58FBC8E8E}</Project>
+      <Name>bssl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\ssl\test\bssl_shim.vcxproj">
+      <Project>{C14CEA1E-E8F3-3F28-AC6C-A2FFE54CF671}</Project>
+      <Name>bssl_shim</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\buf\buf.vcxproj">
+      <Project>{C4E109EB-8455-3F92-A157-9A3489F0F8A8}</Project>
+      <Name>buf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bytestring\bytestring.vcxproj">
+      <Project>{15A2E61C-F0C5-3C2C-9A5E-96BB60E47668}</Project>
+      <Name>bytestring</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\cast\cast.vcxproj">
+      <Project>{7DE38217-F9F6-3879-A93A-B60E85942B40}</Project>
+      <Name>cast</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\cfb\cfb.vcxproj">
+      <Project>{04C9A843-3ADB-3440-8549-915509B7351A}</Project>
+      <Name>cfb</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\chacha\chacha.vcxproj">
+      <Project>{74A98EE3-5113-3787-B745-8BFBE5BD0A58}</Project>
+      <Name>chacha</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\cipher_extra.vcxproj">
+      <Project>{5B8BBE43-7307-33FC-91EC-F8D42FAC52C1}</Project>
+      <Name>cipher_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cmac\cmac.vcxproj">
+      <Project>{092A85A9-C614-3977-A339-67DE7C65C710}</Project>
+      <Name>cmac</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\conf\conf.vcxproj">
+      <Project>{4D129352-BF6D-3D03-81DB-B63537C2E167}</Project>
+      <Name>conf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\crypto.vcxproj">
+      <Project>{E0DC4850-EFA3-3777-AC35-04C14875AC29}</Project>
+      <Name>crypto</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\crypto_base.vcxproj">
+      <Project>{6DA2B6FF-A4C1-327E-A527-748BB44BE32C}</Project>
+      <Name>crypto_base</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\crypto_test.vcxproj">
+      <Project>{93A22E3C-A10E-3622-9137-5554C1FDB059}</Project>
+      <Name>crypto_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto_test_data.vcxproj">
+      <Project>{2347EA79-CFEC-3A35-BF98-A7628DAF5B2D}</Project>
+      <Name>crypto_test_data</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\curve25519\curve25519.vcxproj">
+      <Project>{344C1672-7162-383D-A039-31597500A344}</Project>
+      <Name>curve25519</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\decrepit.vcxproj">
+      <Project>{B7577500-CE9C-3433-A538-B364F3776DC3}</Project>
+      <Name>decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\decrepit_test.vcxproj">
+      <Project>{D86C9493-79A9-3DD3-81B5-E907A933B81A}</Project>
+      <Name>decrepit_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\des\des_decrepit.vcxproj">
+      <Project>{412F9656-CE01-38A5-A3CA-2D5FF6F96D48}</Project>
+      <Name>des_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\dh\dh.vcxproj">
+      <Project>{6F01B3D4-423D-37F1-9661-C0C29FB26611}</Project>
+      <Name>dh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\dh\dh_decrepit.vcxproj">
+      <Project>{91F4B6A4-7144-38C5-9553-6E09AA73BA41}</Project>
+      <Name>dh_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\digest_extra\digest_extra.vcxproj">
+      <Project>{9B3E6379-32A0-371D-B0FD-E2DB7DDCBBB8}</Project>
+      <Name>digest_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\dsa\dsa.vcxproj">
+      <Project>{F60DDE9E-FA4D-3665-9840-377B546EB597}</Project>
+      <Name>dsa</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\dsa\dsa_decrepit.vcxproj">
+      <Project>{52999958-BC77-37B7-AF28-AB6BA361C92A}</Project>
+      <Name>dsa_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\ec_extra\ec_extra.vcxproj">
+      <Project>{9ECA7791-B3B3-3991-A08B-E5D54A36AB0B}</Project>
+      <Name>ec_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\ecdh\ecdh.vcxproj">
+      <Project>{BCAAF4FC-47C2-3373-9D55-9778BAE63F1A}</Project>
+      <Name>ecdh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\ecdsa_extra\ecdsa_extra.vcxproj">
+      <Project>{F1FA394D-0CE7-3611-B219-A4C4E241DD1F}</Project>
+      <Name>ecdsa_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\engine\engine.vcxproj">
+      <Project>{458C9FDF-7A13-317C-A1C9-EDBDB67A8DA1}</Project>
+      <Name>engine</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\err\err.vcxproj">
+      <Project>{7EA2C75F-6EB3-3C73-812A-4822986FB0C4}</Project>
+      <Name>err</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\evp.vcxproj">
+      <Project>{EA16D099-E981-36AC-8452-4272F853C302}</Project>
+      <Name>evp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\evp\evp_decrepit.vcxproj">
+      <Project>{D2A71E82-065E-3D9C-BE3E-BC622A2DD52E}</Project>
+      <Name>evp_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\third_party\fiat\fiat.vcxproj">
+      <Project>{174BEBB8-636F-3843-9D92-BA3BB7E3E07D}</Project>
+      <Name>fiat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\fipsmodule\fipsmodule.vcxproj">
+      <Project>{A04BC022-A1A2-37D7-B43A-DF64EC47B87A}</Project>
+      <Name>fipsmodule</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\hkdf\hkdf.vcxproj">
+      <Project>{D7612F91-D8C2-33B2-A907-F997F61D6094}</Project>
+      <Name>hkdf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\lhash\lhash.vcxproj">
+      <Project>{53A6274E-504B-3E1D-B1E8-D4B047D1D46D}</Project>
+      <Name>lhash</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\obj\obj.vcxproj">
+      <Project>{B8F226E4-9F4D-3E8B-AC57-F58BDD731C9F}</Project>
+      <Name>obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\obj\obj_decrepit.vcxproj">
+      <Project>{43712EC2-313A-3570-8B38-3DC1920E1537}</Project>
+      <Name>obj_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pem\pem.vcxproj">
+      <Project>{808CA104-B596-382C-B032-D440157C2691}</Project>
+      <Name>pem</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pkcs7\pkcs7.vcxproj">
+      <Project>{E2B1AFE7-4C91-3BD3-AA27-889F2660C29C}</Project>
+      <Name>pkcs7</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pkcs8\pkcs8_lib.vcxproj">
+      <Project>{C1FA3E9D-310B-3646-B2B2-D9A9D07D7F3F}</Project>
+      <Name>pkcs8_lib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\poly1305\poly1305.vcxproj">
+      <Project>{80BA6D7D-BEA9-31DC-A880-62C3293805B5}</Project>
+      <Name>poly1305</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pool\pool.vcxproj">
+      <Project>{5D79834E-4EC6-3AB9-88F0-8344A0BBEEED}</Project>
+      <Name>pool</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rand_extra\rand_extra.vcxproj">
+      <Project>{C5FE51B5-7D8C-3E58-A9FF-85D21D28EF6A}</Project>
+      <Name>rand_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rc4\rc4.vcxproj">
+      <Project>{4F91E7A4-90A3-3796-9890-F87B48C00943}</Project>
+      <Name>rc4</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\rc4\rc4_decrepit.vcxproj">
+      <Project>{98C894EB-809D-32AA-A0DD-E578B2A9D043}</Project>
+      <Name>rc4_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\ripemd\ripemd_decrepit.vcxproj">
+      <Project>{906BA4CD-B2EE-303B-8145-F2F1B930A412}</Project>
+      <Name>ripemd_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\rsa\rsa_decrepit.vcxproj">
+      <Project>{44F2ACFB-50AF-3B8D-B54E-BB696445358E}</Project>
+      <Name>rsa_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rsa_extra\rsa_extra.vcxproj">
+      <Project>{8641649D-5D59-3769-93A0-99D561E2D769}</Project>
+      <Name>rsa_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\ssl\ssl.vcxproj">
+      <Project>{EAA2782F-A89D-3009-89AD-2B0BCD17372B}</Project>
+      <Name>ssl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\ssl\ssl_decrepit.vcxproj">
+      <Project>{E983D07C-ECB7-3C6C-BCE3-B4F9B81AFC52}</Project>
+      <Name>ssl_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\ssl\ssl_test.vcxproj">
+      <Project>{71CF3FDE-1507-3A4C-A4D3-53845A8D9642}</Project>
+      <Name>ssl_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\stack\stack.vcxproj">
+      <Project>{507D7D99-1643-3311-AAEA-997C9103FEBB}</Project>
+      <Name>stack</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\test\test_support.vcxproj">
+      <Project>{57C3527D-6E68-38E1-B7BC-7EF09D0FA7EE}</Project>
+      <Name>test_support</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\x509.vcxproj">
+      <Project>{2592B1AF-64CF-39A6-9FE0-D88348FB4003}</Project>
+      <Name>x509</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\x509\x509_decrepit.vcxproj">
+      <Project>{30CCF7A5-3CD8-352C-9D32-F4599A707C9A}</Project>
+      <Name>x509_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\x509v3.vcxproj">
+      <Project>{3DF615D5-DD6F-317D-9FFF-6E95F51F18B5}</Project>
+      <Name>x509v3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\decrepit\xts\xts.vcxproj">
+      <Project>{5AEA68A6-C55D-3CC3-B560-3F86F534F0A7}</Project>
+      <Name>xts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

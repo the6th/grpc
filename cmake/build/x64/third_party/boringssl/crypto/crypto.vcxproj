@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|ARM">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|ARM">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E0DC4850-EFA3-3777-AC35-04C14875AC29}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>crypto</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">crypto</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">crypto</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">crypto</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">crypto</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -utf-8 -w44265</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4061;4100;4127;4200;4204;4221;4242;4244;4267;4371;4388;4296;4350;4365;4389;4464;4510;4512;4514;4548;4610;4623;4625;4626;4668;4706;4710;4711;4800;4820;5026;5027;5045;4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -utf-8 -w44265</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4061;4100;4127;4200;4204;4221;4242;4244;4267;4371;4388;4296;4350;4365;4389;4464;4510;4512;4514;4548;4610;4623;4625;4626;4668;4706;4710;4711;4800;4820;5026;5027;5045;4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -utf-8 -w44265</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4061;4100;4127;4200;4204;4221;4242;4244;4267;4371;4388;4296;4350;4365;4389;4464;4510;4512;4514;4548;4610;4623;4625;4626;4668;4706;4710;4711;4800;4820;5026;5027;5045;4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -utf-8 -w44265</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4061;4100;4127;4200;4204;4221;4242;4244;4267;4371;4388;4296;4350;4365;4389;4464;4510;4512;4514;4548;4610;4623;4625;4626;4668;4706;4710;4711;4800;4820;5026;5027;5045;4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -utf-8 -w44265</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4061;4100;4127;4200;4204;4221;4242;4244;4267;4371;4388;4296;4350;4365;4389;4464;4510;4512;4514;4548;4610;4623;4625;4626;4668;4706;4710;4711;4800;4820;5026;5027;5045;4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -utf-8 -w44265</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4061;4100;4127;4200;4204;4221;4242;4244;4267;4371;4388;4296;4350;4365;4389;4464;4510;4512;4514;4548;4610;4623;4625;4626;4668;4706;4710;4711;4800;4820;5026;5027;5045;4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -utf-8 -w44265</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4061;4100;4127;4200;4204;4221;4242;4244;4267;4371;4388;4296;4350;4365;4389;4464;4510;4512;4514;4548;4610;4623;4625;4626;4668;4706;4710;4711;4800;4820;5026;5027;5045;4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -utf-8 -w44265</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4061;4100;4127;4200;4204;4221;4242;4244;4267;4371;4388;4296;4350;4365;4389;4464;4510;4512;4514;4548;4610;4623;4625;4626;4668;4706;4710;4711;4800;4820;5026;5027;5045;4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_HAS_EXCEPTIONS=0;WIN32_LEAN_AND_MEAN;NOMINMAX;_STL_EXTRA_DISABLED_WARNINGS=4774 4987;BORINGSSL_IMPLEMENTATION;OPENSSL_NO_ASM;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GitHub\grpc-the6th\third_party\zlib;C:\GitHub\grpc-the6th\third_party\boringssl\third_party\googletest\include;C:\GitHub\grpc-the6th\third_party\boringssl\crypto\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GitHub\grpc-the6th\third_party\boringssl\crypto\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/crypto/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/crypto/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/crypto/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|ARM'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/crypto/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">Building Custom Rule C:/GitHub/grpc-the6th/third_party/boringssl/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/GitHub/grpc-the6th -BC:/GitHub/grpc-the6th/cmake/build/x64 --check-stamp-file C:/GitHub/grpc-the6th/cmake/build/x64/third_party/boringssl/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|ARM'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\cpu-aarch64-fuchsia.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\cpu-aarch64-linux.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\cpu-arm.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\cpu-arm-linux.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\cpu-intel.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\cpu-ppc64le.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\crypto.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\ex_data.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\mem.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\refcount_c11.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\refcount_lock.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\thread.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\thread_none.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\thread_pthread.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\$(Platform)\$(Configuration)\thread_win.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\stack\$(Platform)\$(Configuration)\stack.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\lhash\$(Platform)\$(Configuration)\lhash.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\err\$(Platform)\$(Configuration)\err.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\err\$(Platform)\$(Configuration)\err_data.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\base64\$(Platform)\$(Configuration)\base64.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bytestring\$(Platform)\$(Configuration)\asn1_compat.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bytestring\$(Platform)\$(Configuration)\ber.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bytestring\$(Platform)\$(Configuration)\cbs.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bytestring\$(Platform)\$(Configuration)\cbb.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pool\$(Platform)\$(Configuration)\pool.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\fipsmodule\$(Platform)\$(Configuration)\bcm.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\fipsmodule\$(Platform)\$(Configuration)\is_fips.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\digest_extra\$(Platform)\$(Configuration)\digest_extra.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\cipher_extra.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\derive_key.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\e_null.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\e_rc2.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\e_rc4.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\e_aesgcmsiv.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\e_aesctrhmac.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\e_aesccm.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\e_chacha20poly1305.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\tls_cbc.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\e_tls.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\$(Platform)\$(Configuration)\e_ssl3.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rc4\$(Platform)\$(Configuration)\rc4.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\conf\$(Platform)\$(Configuration)\conf.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\chacha\$(Platform)\$(Configuration)\chacha.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\poly1305\$(Platform)\$(Configuration)\poly1305.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\poly1305\$(Platform)\$(Configuration)\poly1305_arm.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\poly1305\$(Platform)\$(Configuration)\poly1305_vec.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\curve25519\$(Platform)\$(Configuration)\spake25519.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\third_party\fiat\$(Platform)\$(Configuration)\curve25519.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\buf\$(Platform)\$(Configuration)\buf.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bn_extra\$(Platform)\$(Configuration)\bn_asn1.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bn_extra\$(Platform)\$(Configuration)\convert.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\$(Platform)\$(Configuration)\bio.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\$(Platform)\$(Configuration)\bio_mem.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\$(Platform)\$(Configuration)\connect.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\$(Platform)\$(Configuration)\fd.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\$(Platform)\$(Configuration)\file.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\$(Platform)\$(Configuration)\hexdump.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\$(Platform)\$(Configuration)\pair.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\$(Platform)\$(Configuration)\printf.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\$(Platform)\$(Configuration)\socket.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\$(Platform)\$(Configuration)\socket_helper.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rand_extra\$(Platform)\$(Configuration)\deterministic.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rand_extra\$(Platform)\$(Configuration)\forkunsafe.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rand_extra\$(Platform)\$(Configuration)\fuchsia.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rand_extra\$(Platform)\$(Configuration)\rand_extra.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rand_extra\$(Platform)\$(Configuration)\windows.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\obj\$(Platform)\$(Configuration)\obj.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\obj\$(Platform)\$(Configuration)\obj_xref.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_bitstr.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_bool.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_d2i_fp.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_dup.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_enum.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_gentm.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_i2d_fp.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_int.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_mbstr.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_object.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_octet.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_print.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_strnid.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_time.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_type.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_utctm.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\a_utf8.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\asn1_lib.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\asn1_par.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\asn_pack.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\f_enum.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\f_int.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\f_string.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\tasn_dec.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\tasn_enc.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\tasn_fre.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\tasn_new.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\tasn_typ.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\tasn_utl.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\$(Platform)\$(Configuration)\time_support.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\engine\$(Platform)\$(Configuration)\engine.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\dh\$(Platform)\$(Configuration)\dh.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\dh\$(Platform)\$(Configuration)\params.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\dh\$(Platform)\$(Configuration)\check.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\dh\$(Platform)\$(Configuration)\dh_asn1.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\dsa\$(Platform)\$(Configuration)\dsa.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\dsa\$(Platform)\$(Configuration)\dsa_asn1.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rsa_extra\$(Platform)\$(Configuration)\rsa_asn1.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\ec_extra\$(Platform)\$(Configuration)\ec_asn1.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\ecdh\$(Platform)\$(Configuration)\ecdh.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\ecdsa_extra\$(Platform)\$(Configuration)\ecdsa_asn1.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cmac\$(Platform)\$(Configuration)\cmac.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\digestsign.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\evp.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\evp_asn1.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\evp_ctx.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\p_dsa_asn1.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\p_ec.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\p_ec_asn1.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\p_ed25519.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\p_ed25519_asn1.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\p_rsa.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\p_rsa_asn1.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\pbkdf.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\print.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\scrypt.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\$(Platform)\$(Configuration)\sign.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\hkdf\$(Platform)\$(Configuration)\hkdf.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pem\$(Platform)\$(Configuration)\pem_all.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pem\$(Platform)\$(Configuration)\pem_info.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pem\$(Platform)\$(Configuration)\pem_lib.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pem\$(Platform)\$(Configuration)\pem_oth.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pem\$(Platform)\$(Configuration)\pem_pk8.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pem\$(Platform)\$(Configuration)\pem_pkey.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pem\$(Platform)\$(Configuration)\pem_x509.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pem\$(Platform)\$(Configuration)\pem_xaux.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\a_digest.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\a_sign.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\a_strex.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\a_verify.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\algorithm.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\asn1_gen.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\by_dir.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\by_file.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\i2d_pr.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\rsa_pss.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\t_crl.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\t_req.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\t_x509.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\t_x509a.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_att.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_cmp.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_d2.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_def.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_ext.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_lu.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_obj.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_r2x.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_req.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_set.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_trs.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_txt.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_v3.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_vfy.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509_vpm.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509cset.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509name.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509rset.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x509spki.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_algor.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_all.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_attrib.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_crl.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_exten.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_info.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_name.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_pkey.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_pubkey.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_req.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_sig.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_spki.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_val.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_x509.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\$(Platform)\$(Configuration)\x_x509a.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\pcy_cache.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\pcy_data.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\pcy_lib.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\pcy_map.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\pcy_node.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\pcy_tree.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_akey.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_akeya.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_alt.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_bcons.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_bitst.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_conf.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_cpols.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_crld.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_enum.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_extku.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_genn.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_ia5.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_info.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_int.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_lib.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_ncons.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_pci.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_pcia.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_pcons.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_pku.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_pmaps.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_prn.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_purp.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_skey.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_sxnet.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\$(Platform)\$(Configuration)\v3_utl.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pkcs7\$(Platform)\$(Configuration)\pkcs7.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pkcs7\$(Platform)\$(Configuration)\pkcs7_x509.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pkcs8\$(Platform)\$(Configuration)\pkcs8.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pkcs8\$(Platform)\$(Configuration)\pkcs8_x509.obj" />
+    <Object Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pkcs8\$(Platform)\$(Configuration)\p5_pbev2.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\ZERO_CHECK.vcxproj">
+      <Project>{0E0E67ED-E715-3413-90C1-95E5C4A16424}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\asn1\asn1.vcxproj">
+      <Project>{9D55677C-B27A-3058-901E-6DA836821EDF}</Project>
+      <Name>asn1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\base64\base64.vcxproj">
+      <Project>{2C3501B8-B740-3B8F-816D-30A5A98A515C}</Project>
+      <Name>base64</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bio\bio.vcxproj">
+      <Project>{28FFF4E7-F7E7-3E58-8683-F23039F96084}</Project>
+      <Name>bio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bn_extra\bn_extra.vcxproj">
+      <Project>{7585D7FB-D1A0-39CB-A29E-483C5AB80C33}</Project>
+      <Name>bn_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\buf\buf.vcxproj">
+      <Project>{C4E109EB-8455-3F92-A157-9A3489F0F8A8}</Project>
+      <Name>buf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\bytestring\bytestring.vcxproj">
+      <Project>{15A2E61C-F0C5-3C2C-9A5E-96BB60E47668}</Project>
+      <Name>bytestring</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\chacha\chacha.vcxproj">
+      <Project>{74A98EE3-5113-3787-B745-8BFBE5BD0A58}</Project>
+      <Name>chacha</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cipher_extra\cipher_extra.vcxproj">
+      <Project>{5B8BBE43-7307-33FC-91EC-F8D42FAC52C1}</Project>
+      <Name>cipher_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\cmac\cmac.vcxproj">
+      <Project>{092A85A9-C614-3977-A339-67DE7C65C710}</Project>
+      <Name>cmac</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\conf\conf.vcxproj">
+      <Project>{4D129352-BF6D-3D03-81DB-B63537C2E167}</Project>
+      <Name>conf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\crypto_base.vcxproj">
+      <Project>{6DA2B6FF-A4C1-327E-A527-748BB44BE32C}</Project>
+      <Name>crypto_base</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\curve25519\curve25519.vcxproj">
+      <Project>{344C1672-7162-383D-A039-31597500A344}</Project>
+      <Name>curve25519</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\dh\dh.vcxproj">
+      <Project>{6F01B3D4-423D-37F1-9661-C0C29FB26611}</Project>
+      <Name>dh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\digest_extra\digest_extra.vcxproj">
+      <Project>{9B3E6379-32A0-371D-B0FD-E2DB7DDCBBB8}</Project>
+      <Name>digest_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\dsa\dsa.vcxproj">
+      <Project>{F60DDE9E-FA4D-3665-9840-377B546EB597}</Project>
+      <Name>dsa</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\ec_extra\ec_extra.vcxproj">
+      <Project>{9ECA7791-B3B3-3991-A08B-E5D54A36AB0B}</Project>
+      <Name>ec_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\ecdh\ecdh.vcxproj">
+      <Project>{BCAAF4FC-47C2-3373-9D55-9778BAE63F1A}</Project>
+      <Name>ecdh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\ecdsa_extra\ecdsa_extra.vcxproj">
+      <Project>{F1FA394D-0CE7-3611-B219-A4C4E241DD1F}</Project>
+      <Name>ecdsa_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\engine\engine.vcxproj">
+      <Project>{458C9FDF-7A13-317C-A1C9-EDBDB67A8DA1}</Project>
+      <Name>engine</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\err\err.vcxproj">
+      <Project>{7EA2C75F-6EB3-3C73-812A-4822986FB0C4}</Project>
+      <Name>err</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\evp\evp.vcxproj">
+      <Project>{EA16D099-E981-36AC-8452-4272F853C302}</Project>
+      <Name>evp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\third_party\fiat\fiat.vcxproj">
+      <Project>{174BEBB8-636F-3843-9D92-BA3BB7E3E07D}</Project>
+      <Name>fiat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\fipsmodule\fipsmodule.vcxproj">
+      <Project>{A04BC022-A1A2-37D7-B43A-DF64EC47B87A}</Project>
+      <Name>fipsmodule</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\hkdf\hkdf.vcxproj">
+      <Project>{D7612F91-D8C2-33B2-A907-F997F61D6094}</Project>
+      <Name>hkdf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\lhash\lhash.vcxproj">
+      <Project>{53A6274E-504B-3E1D-B1E8-D4B047D1D46D}</Project>
+      <Name>lhash</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\obj\obj.vcxproj">
+      <Project>{B8F226E4-9F4D-3E8B-AC57-F58BDD731C9F}</Project>
+      <Name>obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pem\pem.vcxproj">
+      <Project>{808CA104-B596-382C-B032-D440157C2691}</Project>
+      <Name>pem</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pkcs7\pkcs7.vcxproj">
+      <Project>{E2B1AFE7-4C91-3BD3-AA27-889F2660C29C}</Project>
+      <Name>pkcs7</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pkcs8\pkcs8_lib.vcxproj">
+      <Project>{C1FA3E9D-310B-3646-B2B2-D9A9D07D7F3F}</Project>
+      <Name>pkcs8_lib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\poly1305\poly1305.vcxproj">
+      <Project>{80BA6D7D-BEA9-31DC-A880-62C3293805B5}</Project>
+      <Name>poly1305</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\pool\pool.vcxproj">
+      <Project>{5D79834E-4EC6-3AB9-88F0-8344A0BBEEED}</Project>
+      <Name>pool</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rand_extra\rand_extra.vcxproj">
+      <Project>{C5FE51B5-7D8C-3E58-A9FF-85D21D28EF6A}</Project>
+      <Name>rand_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rc4\rc4.vcxproj">
+      <Project>{4F91E7A4-90A3-3796-9890-F87B48C00943}</Project>
+      <Name>rc4</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\rsa_extra\rsa_extra.vcxproj">
+      <Project>{8641649D-5D59-3769-93A0-99D561E2D769}</Project>
+      <Name>rsa_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\stack\stack.vcxproj">
+      <Project>{507D7D99-1643-3311-AAEA-997C9103FEBB}</Project>
+      <Name>stack</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509\x509.vcxproj">
+      <Project>{2592B1AF-64CF-39A6-9FE0-D88348FB4003}</Project>
+      <Name>x509</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GitHub\grpc-the6th\cmake\build\x64\third_party\boringssl\crypto\x509v3\x509v3.vcxproj">
+      <Project>{3DF615D5-DD6F-317D-9FFF-6E95F51F18B5}</Project>
+      <Name>x509v3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
