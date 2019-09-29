@@ -97,7 +97,8 @@ namespace Grpc.Core.Internal
             {
                 if (PlatformApis.IsMono)
                 {
-                    return Mono.dlsym(this.handle, symbolName);
+                    return IntPtr.Zero;
+                    //return Mono.dlsym(this.handle, symbolName);
                 }
                 if (PlatformApis.IsNetCore)
                 {
@@ -142,7 +143,9 @@ namespace Grpc.Core.Internal
             {
                 if (PlatformApis.IsMono)
                 {
-                    return LoadLibraryPosix(Mono.dlopen, Mono.dlerror, libraryPath, out errorMsg);
+                    errorMsg = "";
+                    return IntPtr.Zero;
+                    //return LoadLibraryPosix(Mono.dlopen, Mono.dlerror, libraryPath, out errorMsg);
                 }
                 if (PlatformApis.IsNetCore)
                 {
@@ -225,6 +228,7 @@ namespace Grpc.Core.Internal
         /// </summary>
         private static class Mono
         {
+            /*
             [DllImport("__Internal")]
             internal static extern IntPtr dlopen(string filename, int flags);
 
@@ -233,6 +237,7 @@ namespace Grpc.Core.Internal
 
             [DllImport("__Internal")]
             internal static extern IntPtr dlsym(IntPtr handle, string symbol);
+             */
         }
 
         /// <summary>

@@ -170,12 +170,15 @@ namespace Grpc.Core.Internal
         /// </summary>
         public static string GetUnityRuntimePlatform()
         {
+             return "UWP";
+             /*
             GrpcPreconditions.CheckState(IsUnity, "Not running on Unity.");
 #if NETSTANDARD1_5 || NETSTANDARD2_0
             return Type.GetType(UnityEngineApplicationClassName).GetTypeInfo().GetProperty("platform").GetValue(null).ToString();
 #else
             return Type.GetType(UnityEngineApplicationClassName).GetProperty("platform").GetValue(null).ToString();
 #endif
+            */
         }
 
         [DllImport("libc")]

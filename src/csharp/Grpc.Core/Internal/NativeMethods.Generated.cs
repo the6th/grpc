@@ -546,7 +546,8 @@ namespace Grpc.Core.Internal
         /// </summary>
         internal class DllImportsFromStaticLib
         {
-            private const string ImportName = "__Internal";
+            //private const string ImportName = "__Internal";
+            private const string ImportName = "grpc_csharp_ext";
             
             [DllImport(ImportName)]
             public static extern void grpcsharp_init();
